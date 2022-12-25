@@ -61,7 +61,10 @@ static const char *dmenucmd[] 			= { "dmenu_run", "-m", dmenumon, "-fn", dmenufo
 static const char *termcmd[]  			= { "alacritty", NULL };
 static const char *browsercmd[]  		= { "firefox", NULL };
 static const char *discordcmd[]  		= { "discord", NULL };
-static const char *flameshotcmd[]  	= { "flameshot", "gui", NULL};
+static const char *flameshotcmd[]		= { "flameshot", "gui", NULL};
+static const char *upvol[]   				= { "amixer", "set", "Master", "3+",     NULL };
+static const char *downvol[] 				= { "amixer", "set", "Master", "3-",     NULL };
+static const char *mutevol[] 				= { "amixer", "set", "Master", "toggle", NULL };
 
 #include "exitdwm.c"
 
@@ -104,7 +107,9 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,							XK_e,      exitdwm,     	 {0} },
 	{ MODKEY|ControlMask|ShiftMask, XK_q,      quit,           {1} }, 
-
+	{ MODKEY|ShiftMask,             XK_Up,   	 spawn,          {.v = upvol   } },
+	{ MODKEY|ShiftMask,             XK_Down,   spawn,          {.v = downvol } },
+	{ MODKEY|ShiftMask,             XK_m,      spawn,          {.v = mutevol } },
 };
 
 /* button definitions */
