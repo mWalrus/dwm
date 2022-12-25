@@ -12,16 +12,16 @@ static const char col_gray1[]       = "#232634";
 static const char col_gray2[]       = "#414559";
 static const char col_gray3[]       = "#b5bfe2";
 static const char col_gray4[]       = "#c6d0f5";
-static const char col_mauve[]        = "#ca9ee6";
+static const char col_mauve[]       = "#ca9ee6";
 static const char *colors[][3]      = {
-	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_mauve,  col_mauve  },
-	[SchemeStatus]  = { col_gray3, col_gray1,  col_black  }, // Statusbar right {text,background,not used but cannot be empty}
-	[SchemeTagsSel]  = { col_black, col_mauve, col_black  }, // Tagbar left selected {text,background,not used but cannot be empty}
-	[SchemeTagsNorm]  = { col_gray3, col_gray1,  col_black  }, // Tagbar left unselected {text,background,not used but cannot be empty}
-	[SchemeInfoSel]  = { col_gray4, col_gray1,  col_black  }, // infobar middle  selected {text,background,not used but cannot be empty}
-	[SchemeInfoNorm]  = { col_gray3, col_gray1,  col_black  }, // infobar middle  unselected {text,background,not used but cannot be empty}
+	/*               					fg         bg       border   */
+	[SchemeNorm] 			= { col_gray3, col_gray1, col_gray2 },
+	[SchemeSel]  			= { col_gray4, col_mauve, col_mauve },
+	[SchemeStatus]  	= { col_gray3, col_gray1, col_black }, // Statusbar right {text,background,not used but cannot be empty}
+	[SchemeTagsSel]  	= { col_black, col_mauve, col_black }, // Tagbar left selected {text,background,not used but cannot be empty}
+	[SchemeTagsNorm]  = { col_gray3, col_gray1, col_black }, // Tagbar left unselected {text,background,not used but cannot be empty}
+	[SchemeInfoSel]  	= { col_gray4, col_gray1, col_black }, // infobar middle  selected {text,background,not used but cannot be empty}
+	[SchemeInfoNorm]  = { col_gray3, col_gray1, col_black }, // infobar middle  unselected {text,background,not used but cannot be empty}
 };
 
 /* tagging */
