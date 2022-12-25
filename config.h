@@ -70,7 +70,7 @@ static const char *mutevol[] 				= { "amixer", "set", "Master", "toggle", NULL }
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY, 											XK_Print,	 spawn,					 {.v = flameshotcmd } },
+	{ 0, 														XK_Print,	 spawn,					 {.v = flameshotcmd } },
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY, 											XK_b,      spawn,      		 {.v = browsercmd } },
