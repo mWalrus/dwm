@@ -1,5 +1,37 @@
 # Wally's dwm config
-A simple and cute dwm config c:
+A simple and cute dwm config with catppuccin colors c:
+
+## Demo
+![demo](./demo/screenshot.png)
+
+## Install
+
+### Dependencies
+- [dunst](https://github.com/dunst-project/dunst)
+- [feh](https://github.com/derf/feh) (setting wallpaper)
+
+### Status bar
+1. clone the repo: `git clone https://github.com/mWalrus/slstatus`
+2. `cd slstatus`
+3. OPTIONAL: choose status config:
+    - `git checkout laptop` (includes battery info)
+3. `make && sudo make clean install`
+
+### Dwm
+1. clone the repo: `git clone https://github.com/mWalrus/dwm`
+2. `cd dwm`
+3. `make && sudo make clean install`
+4. reboot
+5. select `dwm` from your display manager
+
+## Modified defaults
+I daily drive `alacritty` so I've changed the default terminal command `termcmd` to
+run `alacritty` instead of `st`.
+
+Default browser keybind is set to launch `firefox` so if you use another browser you
+can also change this.
+
+The above can be changed in `config.h` if you want.
 
 ## Patches applied
 - [attachbottom](https://dwm.suckless.org/patches/attachbottom/)
@@ -10,5 +42,16 @@ A simple and cute dwm config c:
 - [restartsig](https://dwm.suckless.org/patches/restartsig/)
 - [statusallmons](https://dwm.suckless.org/patches/statusallmons/)
 
-## Demo
-![demo](./demo/screenshot.png)
+## Keybinds
+|Bind|Description|Requirement(s)|
+|-|-|-|
+|PrtSc|Launch flameshot (screenshot tool)|[`flameshot`](https://github.com/flameshot-org/flameshot) installed|
+|Mod+b|Launch firefox|firefox|
+|Mod+Shift+d|Launch discord|discord|
+|Mod+Shift+b|Toggle bar||
+|Mod+Shift+q|Kill focused client||
+|Mod+Shift+e|Launch exit menu||
+|Mod+Shift+Ctrl+q|Exit dwm||
+|Mod+Shift+Up|Increase volume||
+|Mod+Shift+Down|Decrease volume||
+|Mod+Shift+m|Mute volume||
