@@ -27,6 +27,9 @@ static const char *colors[][3]      = {
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
+/* Lockfile */
+static char lockfile[] = "/tmp/dwm.lock";
+
 static const Rule rules[] = {
 	/* xprop(1):
 	 *	WM_CLASS(STRING) = instance, class
@@ -112,7 +115,7 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,							XK_e,      exitdwm,     	 {0} },
-	{ MODKEY|ControlMask|ShiftMask, XK_q,      quit,           {1} }, 
+	{ MODKEY,												XK_q,      quit,           {1} }, 
 	{ MODKEY|ShiftMask,             XK_Up,   	 spawn,          {.v = upvol   } },
 	{ MODKEY|ShiftMask,             XK_Down,   spawn,          {.v = downvol } },
 	{ MODKEY|ShiftMask,             XK_m,      spawn,          {.v = mutevol } },
