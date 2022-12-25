@@ -118,3 +118,11 @@ static const Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
 
+// autostart
+static const char *const autostart[] = {
+	"feh", "--bg-center", "/home/walrus/dwm/wallpaper.png", NULL,
+	"dunst", NULL,
+	NULL
+};
+
+
