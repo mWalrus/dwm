@@ -1,3 +1,4 @@
 *.o
+*.diff.*
 *.diff
 dwm
