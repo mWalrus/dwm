@@ -40,6 +40,8 @@ The above can be changed in `config.h` if you want :)
 - [exitmenu](https://dwm.suckless.org/patches/exitmenu/)
 - [restartsig](https://dwm.suckless.org/patches/restartsig/)
 - [statusallmons](https://dwm.suckless.org/patches/statusallmons/)
+- [preserveonrestart](https://dwm.suckless.org/patches/preserveonrestart/)
+- [doublepressquit](https://dwm.suckless.org/patches/doublepressquit/)
 
 ## Keybinds
 |Bind|Description|Requirement(s)|
