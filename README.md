@@ -44,15 +44,15 @@ The above can be changed in `config.h` if you want :)
 - [doublepressquit](https://dwm.suckless.org/patches/doublepressquit/)
 
 ## Keybinds
-|Bind|Description|Requirement(s)|
+|Bind|Description|Notes|
 |-|-|-|
-|PrtSc|Launch flameshot (screenshot tool)|[flameshot](https://github.com/flameshot-org/flameshot)|
-|Mod+b|Launch firefox|firefox|
-|Mod+Shift+d|Launch discord|discord|
+|PrtSc|Launch flameshot (screenshot tool)|Requires [flameshot](https://github.com/flameshot-org/flameshot)|
+|Mod+b|Launch firefox|Requires firefox|
+|Mod+Shift+d|Launch discord|Requires discord|
 |Mod+Shift+b|Toggle bar||
 |Mod+Shift+q|Kill focused client||
 |Mod+Shift+e|Launch exit menu||
-|Mod+Shift+Ctrl+q|Exit dwm||
+|Mod+q|Exit dwm|Double press to perform action|
 |Mod+Shift+Up|Increase volume||
 |Mod+Shift+Down|Decrease volume||
 |Mod+Shift+m|Mute volume||
