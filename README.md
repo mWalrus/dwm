@@ -43,6 +43,7 @@ The above can be changed in `config.h` if you want :)
 - [preserveonrestart](https://dwm.suckless.org/patches/preserveonrestart/)
 - [doublepressquit](https://dwm.suckless.org/patches/doublepressquit/)
 - [rotatestack](https://dwm.suckless.org/patches/rotatestack/)
+- [statuspadding](https://dwm.suckless.org/patches/statuspadding/)
 
 ## Keybinds
 |Bind|Description|Notes|
