@@ -143,7 +143,8 @@ static const Button buttons[] = {
 // autostart
 static const char *const autostart[] = {
 	"feh", "--bg-center", "/home/walrus/dwm/wallpaper.png", NULL,
-	"dunst", NULL,
+	"killall", "dunst", NULL,
+	"type", "dunst", "&&", "dunst", NULL,
 	"slstatus", NULL,
 	NULL
 };
