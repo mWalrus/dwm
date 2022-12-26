@@ -24,13 +24,15 @@ A simple and cute dwm config with catppuccin colors c:
 4. reboot
 5. select `dwm` from your display manager
 
-## Modified defaults
-`termcmd` launches alacritty in this config instead of st.
+## Spawn commands
+The current spawn commands are:
+- termcmd
+- browsercmd
+- discordcmd
+- chatterinocmd
+- flameshotcmd
 
-Default browser keybind is set to launch `firefox` so if you use another browser you
-can also change this.
-
-The above can be changed in `config.h` if you want :)
+These commands can be removed or modified in `config.h` to your liking :)
 
 ## Patches applied
 - [attachbottom](https://dwm.suckless.org/patches/attachbottom/)
