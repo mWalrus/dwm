@@ -51,7 +51,7 @@ The above can be changed in `config.h` if you want :)
 |Mod+Shift+d|Launch discord|Requires discord|
 |Mod+Shift+b|Toggle bar||
 |Mod+Shift+q|Kill focused client||
-|Mod+Shift+e|Launch exit menu||
+|Mod+Shift+p|Launch exit menu||
 |Mod+q|Exit dwm|Double press to perform action|
 |Mod+Shift+Up|Increase volume||
 |Mod+Shift+Down|Decrease volume||

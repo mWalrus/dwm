@@ -110,7 +110,7 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-	{ MODKEY|ShiftMask,							XK_e,      exitdwm,     	 {0} },
+	{ MODKEY|ShiftMask,							XK_p,      exitdwm,     	 {0} },
 	{ MODKEY,												XK_q,      quit,           {1} }, 
 	{ MODKEY|ShiftMask,             XK_Up,   	 spawn,          {.v = upvol   } },
 	{ MODKEY|ShiftMask,             XK_Down,   spawn,          {.v = downvol } },
