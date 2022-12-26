@@ -15,6 +15,11 @@ A simple and cute dwm config with catppuccin colors c:
 2. `cd slstatus`
 3. OPTIONAL: choose status config:
     - `git checkout laptop` (includes battery info)
+4. `make && sudo make clean install`
+
+### dmenu
+1. clone the repo: `git clone https://github.com/mWalrus/dmenu`
+2. `cd dmenu`
 3. `make && sudo make clean install`
 
 ### Dwm
