@@ -40,12 +40,12 @@ void exitdwm ()
 	char command [150];
 
 	sprintf(command,"echo  \"%s\n%s\n%s\n%s\n%s\n%s\" | dmenu -sb '%s' -nb '%s' -p exit: | %s",
+		S_FORMAT (SHUTDOWN),
+		S_FORMAT (REBOOT),
 		S_FORMAT (LOCK),
-		S_FORMAT(RESTART_DWM),
+		S_FORMAT (RESTART_DWM),
 		S_FORMAT (OFFSCREEN),
 		S_FORMAT (EXIT),
-		S_FORMAT (REBOOT),
-		S_FORMAT (SHUTDOWN),
 		col_mauve,
 		col_gray1,
 		S_FORMAT_CLEAR
