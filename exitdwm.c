@@ -37,9 +37,9 @@ void exitdwm ()
 # define S_FORMAT(ACTION) S_##ACTION##_ICON " " S_##ACTION
 # define S_FORMAT_CLEAR "sed 's/^..//'"
 
-	char command [150];
+	char command[256];
 
-	sprintf(command,"echo  \"%s\n%s\n%s\n%s\n%s\n%s\" | dmenu -sb '%s' -nb '%s' -p exit: | %s",
+	sprintf(command,"echo  \"%s\n%s\n%s\n%s\n%s\n%s\" | dmenu -h 18 -sb '%s' -sf '%s' -nb '%s' -p exit: | %s",
 		S_FORMAT (SHUTDOWN),
 		S_FORMAT (REBOOT),
 		S_FORMAT (LOCK),
@@ -47,6 +47,7 @@ void exitdwm ()
 		S_FORMAT (OFFSCREEN),
 		S_FORMAT (EXIT),
 		col_mauve,
+		col_black,
 		col_gray1,
 		S_FORMAT_CLEAR
 	);
