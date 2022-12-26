@@ -49,5 +49,6 @@ install: all
 uninstall:
 	rm -f ${DESTDIR}${PREFIX}/bin/dwm\
 		${DESTDIR}${MANPREFIX}/man1/dwm.1
+	rm -f /usr/share/xsessions/dwm.desktop
 
 .PHONY: all options clean dist install uninstall
