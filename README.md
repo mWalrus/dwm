@@ -7,8 +7,8 @@ A simple and cute dwm config with catppuccin colors c:
 ## Install
 
 ### Dependencies
-- [dunst](https://github.com/dunst-project/dunst)
 - [feh](https://github.com/derf/feh) (setting wallpaper)
+- OPTIONAL: [dunst](https://github.com/dunst-project/dunst)
 
 ### Status bar
 1. clone the repo: `git clone https://github.com/mWalrus/slstatus`
@@ -23,6 +23,12 @@ A simple and cute dwm config with catppuccin colors c:
 3. `make && sudo make clean install`
 4. reboot
 5. select `dwm` from your display manager
+
+### Dunst config
+stand in this repository's directory:
+1. `mkdir -p $HOME/.config/dunst`
+2. `cp dunstrc $HOME/.config/dunst/`
+3. reload dwm
 
 ## Spawn commands
 The current spawn commands are:
