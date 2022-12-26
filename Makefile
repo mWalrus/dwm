@@ -37,7 +37,8 @@ dist: clean
 	rm -rf dwm-${VERSION}
 
 install: all
-	cp -f dwm.desktop /usr/share/xsessions/dwm.desktop
+	mkdir -p /usr/share/xsessions/
+	cp -f dwm.desktop /usr/share/xsessions/
 	chmod 644 /usr/share/xsessions/dwm.desktop
 	mkdir -p ${DESTDIR}${PREFIX}/bin
 	cp -f dwm ${DESTDIR}${PREFIX}/bin
