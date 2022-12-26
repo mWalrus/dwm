@@ -42,6 +42,7 @@ The above can be changed in `config.h` if you want :)
 - [statusallmons](https://dwm.suckless.org/patches/statusallmons/)
 - [preserveonrestart](https://dwm.suckless.org/patches/preserveonrestart/)
 - [doublepressquit](https://dwm.suckless.org/patches/doublepressquit/)
+- [rotatestack](https://dwm.suckless.org/patches/rotatestack/)
 
 ## Keybinds
 |Bind|Description|Notes|
