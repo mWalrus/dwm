@@ -66,6 +66,7 @@ static const char *dmenucmd[] 			= { "dmenu_run", "-m", dmenumon, "-fn", dmenufo
 static const char *termcmd[]  			= { "alacritty", NULL };
 static const char *browsercmd[]  		= { "firefox", NULL };
 static const char *discordcmd[]  		= { "discord", NULL };
+static const char *chatterinocmd[]  = { "chatterino", NULL };
 static const char *flameshotcmd[]		= { "flameshot", "gui", NULL};
 static const char *upvol[]   				= { "amixer", "set", "Master", "3+",     NULL };
 static const char *downvol[] 				= { "amixer", "set", "Master", "3-",     NULL };
@@ -80,6 +81,7 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY, 											XK_b,      spawn,      		 {.v = browsercmd } },
 	{ MODKEY, 											XK_d,      spawn,      		 {.v = discordcmd } },
+	{ MODKEY, 											XK_c,      spawn,      		 {.v = chatterinocmd } },
 	{ MODKEY|ShiftMask, 						XK_b,      togglebar,      {0} },
 	{ MODKEY|ShiftMask,             XK_j,      rotatestack,    {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_k,      rotatestack,    {.i = -1 } },

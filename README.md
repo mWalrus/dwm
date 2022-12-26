@@ -49,7 +49,8 @@ The above can be changed in `config.h` if you want :)
 |-|-|-|
 |PrtSc|Launch flameshot (screenshot tool)|Requires [flameshot](https://github.com/flameshot-org/flameshot)|
 |Mod+b|Launch firefox|Requires firefox|
-|Mod+Shift+d|Launch discord|Requires discord|
+|Mod+d|Launch discord|Requires discord|
+|Mod+c|Launch chatterino|Requires chatterino|
 |Mod+Shift+b|Toggle bar||
 |Mod+Shift+q|Kill focused client||
 |Mod+Shift+p|Launch exit menu||
