@@ -63,6 +63,7 @@ All `.diff` files can be found in the [patches/ directory](./patches).
 - [doublepressquit](https://dwm.suckless.org/patches/doublepressquit/)
 - [rotatestack](https://dwm.suckless.org/patches/rotatestack/)
 - [statuspadding](https://dwm.suckless.org/patches/statuspadding/)
+All `.diff` files can be found in the [patches/ directory](./patches).
 
 ## Keybinds
 |Bind|Description|Notes|
