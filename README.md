@@ -18,6 +18,11 @@ A simple and cute dwm config with catppuccin colors c:
 4. `make && sudo make clean install`
 
 ### dmenu
+dmenu is used for the exit menu patch so it is needed for that to work.
+However, if you want to use another menu for launching applications you can edit
+`dmenucmd` in [config.h](./config.h).
+
+Otherwise follow these steps:
 1. clone the repo: `git clone https://github.com/mWalrus/dmenu`
 2. `cd dmenu`
 3. `make && sudo make clean install`
