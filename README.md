@@ -48,7 +48,7 @@ The current spawn commands are:
 - chatterinocmd
 - flameshotcmd
 
-These commands can be removed or modified in `config.h` to your liking :)
+These commands can be removed or modified in [config.h](./config.h) to your liking :)
 
 ## Patches applied
 - [attachbottom](https://dwm.suckless.org/patches/attachbottom/)
