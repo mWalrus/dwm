@@ -39,7 +39,7 @@ void exitdwm ()
 
 	char command[256];
 
-	sprintf(command,"echo  \"%s\n%s\n%s\n%s\n%s\n%s\" | dmenu -h 18 -sb '%s' -sf '%s' -nb '%s' -p exit: | %s",
+	sprintf(command,"echo  \"%s\n%s\n%s\n%s\n%s\n%s\" | dmenu -h 21 -sb '%s' -sf '%s' -nb '%s' -p exit: | %s",
 		S_FORMAT (SHUTDOWN),
 		S_FORMAT (REBOOT),
 		S_FORMAT (LOCK),
