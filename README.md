@@ -51,6 +51,7 @@ The current spawn commands are:
 These commands can be removed or modified in `config.h` to your liking :)
 
 ## Patches applied
+All `.diff` files can be found in the [patches/ directory](./patches).
 - [attachbottom](https://dwm.suckless.org/patches/attachbottom/)
 - [colorbar](https://dwm.suckless.org/patches/colorbar/)
 - [cool autostart](https://dwm.suckless.org/patches/cool_autostart/)
