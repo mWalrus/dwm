@@ -34,12 +34,6 @@ Otherwise follow these steps:
 4. reboot
 5. select `dwm` from your display manager
 
-### Dunst config
-stand in this repository's directory:
-1. `mkdir -p $HOME/.config/dunst`
-2. `cp dunstrc $HOME/.config/dunst/`
-3. reload dwm
-
 ## Spawn commands
 The current spawn commands are:
 - termcmd
