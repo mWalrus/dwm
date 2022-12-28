@@ -62,7 +62,7 @@ All `.diff` files can be found in the [patches/ directory](./patches).
 ## Keybinds
 |Bind|Description|Notes|
 |-|-|-|
-|PrtSc|Launch flameshot (screenshot tool)|Requires [flameshot](https://github.com/flameshot-org/flameshot)|
+|PrtSc|Launch flameshot|Requires [flameshot](https://github.com/flameshot-org/flameshot)(screenshot tool)|
 |Mod+b|Launch firefox|Requires firefox|
 |Mod+d|Launch discord|Requires discord|
 |Mod+c|Launch chatterino|Requires chatterino|
@@ -73,3 +73,7 @@ All `.diff` files can be found in the [patches/ directory](./patches).
 |Mod+Shift+Up|Increase volume||
 |Mod+Shift+Down|Decrease volume||
 |Mod+Shift+m|Mute volume||
+|Mod+h|Focus monitor left||
+|Mod+l|Focus monitor right||
+|Mod+Shift+h|Decrease master client width||
+|Mod+Shift+l|Increase master client width||
