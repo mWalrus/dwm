@@ -10,7 +10,7 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const int horizpadbar        = 4;        /* horizontal padding for statusbar */
 static const int vertpadbar         = 0;        /* vertical padding for statusbar */
 static const char *fonts[]          = { "monospace:size=12" };
-static const char dmenufont[]       = "monospace:size=12";
+static const char dmenufont[]       = "monospace:size=11";
 static const char *colors[][3]      = {
 	/*               					fg         bg       border   */
 	[SchemeNorm] 			= { col_gray3, col_gray1, col_gray2 },
