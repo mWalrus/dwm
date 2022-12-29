@@ -7,6 +7,7 @@ A simple and cute dwm config with catppuccin colors c:
 ## Install
 
 ### Dependencies
+- [dmenu](https://tools.suckless.org/dmenu/) (can be replaced by modifying the code)
 - [feh](https://github.com/derf/feh) (setting wallpaper)
 - OPTIONAL: [dunst](https://github.com/dunst-project/dunst)
 
@@ -16,16 +17,6 @@ A simple and cute dwm config with catppuccin colors c:
 3. OPTIONAL: choose status config:
     - `git checkout laptop` (includes battery info)
 4. `make && sudo make clean install`
-
-### dmenu
-dmenu is used for the exit menu patch so it is needed for that to work.
-However, if you want to use another menu for launching applications you can edit
-`dmenucmd` in [config.h](./config.h).
-
-Otherwise follow these steps:
-1. clone the repo: `git clone https://github.com/mWalrus/dmenu`
-2. `cd dmenu`
-3. `make && sudo make clean install`
 
 ### Dwm
 1. clone the repo: `git clone https://github.com/mWalrus/dwm`
