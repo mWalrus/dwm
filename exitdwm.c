@@ -37,15 +37,18 @@ void exitdwm ()
 # define S_FORMAT(ACTION) S_##ACTION##_ICON " " S_##ACTION
 # define S_FORMAT_CLEAR "sed 's/^..//'"
 
-	char command[256];
+	int cmd_buf = 256;
 
-	snprintf(command, 256, "echo  \"%s\n%s\n%s\n%s\n%s\n%s\" | dmenu -fn 'monospace:size=11' -sb '%s' -sf '%s' -nb '%s' -p exit: | %s",
+	char command[cmd_buf];
+
+	snprintf(command, cmd_buf, "echo  \"%s\n%s\n%s\n%s\n%s\n%s\" | dmenu -fn '%s' -sb '%s' -sf '%s' -nb '%s' -p exit: | %s",
 		S_FORMAT (SHUTDOWN),
 		S_FORMAT (REBOOT),
 		S_FORMAT (LOCK),
 		S_FORMAT (RESTART_DWM),
 		S_FORMAT (OFFSCREEN),
 		S_FORMAT (EXIT),
+		dmenufont,
 		col_mauve,
 		col_black,
 		col_gray1,
