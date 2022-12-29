@@ -142,7 +142,7 @@ static const Button buttons[] = {
 
 // autostart
 static const char *const autostart[] = {
-	"feh", "--bg-center", "/home/walrus/dwm/wallpaper.png", NULL,
+	"feh", "--bg-center", "/usr/share/dwm/wallpaper.png", NULL,
 	"killall", "dunst", NULL,
 	"type", "dunst", "&&", "dunst", NULL, /* only launch dunst if the binary exists */
 	"setxkbmap", "-layout", "us", NULL,

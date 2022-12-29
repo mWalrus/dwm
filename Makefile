@@ -37,7 +37,7 @@ dist: clean
 	rm -rf dwm-${VERSION}
 
 install: all
-	mkdir -p /usr/share/xsessions/
+	mkdir -p /usr/share/xsessions
 	cp -f dwm.desktop /usr/share/xsessions/
 	chmod 644 /usr/share/xsessions/dwm.desktop
 	mkdir -p ${DESTDIR}${PREFIX}/bin
@@ -46,6 +46,8 @@ install: all
 	mkdir -p ${DESTDIR}${MANPREFIX}/man1
 	sed "s/VERSION/${VERSION}/g" < dwm.1 > ${DESTDIR}${MANPREFIX}/man1/dwm.1
 	chmod 644 ${DESTDIR}${MANPREFIX}/man1/dwm.1
+	mkdir -p /usr/share/dwm
+	cp -f wallpaper.png /usr/share/dwm/
 ifneq (, $(shell command -v dunst))
 	mkdir -p /etc/dunst
 	cp -f dunstrc /etc/dunst/
@@ -55,5 +57,6 @@ uninstall:
 	rm -f ${DESTDIR}${PREFIX}/bin/dwm\
 		${DESTDIR}${MANPREFIX}/man1/dwm.1
 	rm -f /usr/share/xsessions/dwm.desktop
+	rm -rf /usr/share/dwm
 
 .PHONY: all options clean dist install uninstall
