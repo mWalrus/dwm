@@ -66,8 +66,8 @@ static const char *browsercmd[]  		= { "firefox", NULL };
 static const char *discordcmd[]  		= { "discord", NULL };
 static const char *chatterinocmd[]  = { "chatterino", NULL };
 static const char *flameshotcmd[]		= { "flameshot", "gui", NULL};
-static const char *upvol[]   				= { "amixer", "set", "Master", "3+",     NULL };
-static const char *downvol[] 				= { "amixer", "set", "Master", "3-",     NULL };
+static const char *upvol[]   				= { "amixer", "set", "Master", "2%+",     NULL };
+static const char *downvol[] 				= { "amixer", "set", "Master", "2%-",     NULL };
 static const char *mutevol[] 				= { "amixer", "set", "Master", "toggle", NULL };
 
 #include "exitdwm.c"
