@@ -39,6 +39,7 @@ These commands can be removed or modified in [config.h](./config.h) to your liki
 ## Patches applied
 - [attachbottom](https://dwm.suckless.org/patches/attachbottom/)
 - [colorbar](https://dwm.suckless.org/patches/colorbar/)
+- [colstack](./patches/dwm-colstack-6.4.diff)
 - [cool autostart](https://dwm.suckless.org/patches/cool_autostart/)
 - [cursorwarp](https://dwm.suckless.org/patches/cursorwarp/)
 - [exitmenu](https://dwm.suckless.org/patches/exitmenu/)
