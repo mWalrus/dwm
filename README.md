@@ -9,6 +9,7 @@ A simple and cute dwm config with catppuccin colors c:
 ### Dependencies
 - [dmenu](https://tools.suckless.org/dmenu/) (can be replaced by modifying the code)
 - [feh](https://github.com/derf/feh) (setting wallpaper)
+- pulseaudio-alsa (for volume display in the bar)
 - OPTIONAL: [dunst](https://github.com/dunst-project/dunst)
 
 ### Status bar
