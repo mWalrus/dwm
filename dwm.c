@@ -217,6 +217,7 @@ static void sigterm(int unused);
 static void spawn(const Arg *arg);
 static void tag(const Arg *arg);
 static void tagmon(const Arg *arg);
+static void col(Monitor *m);
 static void tile(Monitor *m);
 static void togglebar(const Arg *arg);
 static void togglefloating(const Arg *arg);
@@ -1880,6 +1881,36 @@ tagmon(const Arg *arg)
 	if (!selmon->sel || !mons->next)
 		return;
 	sendmon(selmon->sel, dirtomon(arg->i));
+}
+
+void
+col(Monitor *m)
+{
+	unsigned int i, n, mw, my;
+	float cw;
+	Client *c;
+
+	for (n = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), n++);
+	if (n == 0)
+		return;
+
+	if (n > m->nmaster) {
+		if (n == 2)
+			cw = m->mfact;
+		else
+			cw = 1.0 / n;
+		mw = m->nmaster ? m->ww * cw : 0;
+	}
+	else
+		mw = m->ww;
+	for (i = my = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), i++) {
+		if (i < m->nmaster)
+			resize(c, m->wx, m->wy + my, mw - (2*c->bw), m->wh - (2*c->bw), 0);
+		else
+			resize(c, m->wx + (mw*i), m->wy + my, mw - (2*c->bw), m->wh - (2*c->bw), 0);
+		if (my + HEIGHT(c) < m->wh)
+			my += HEIGHT(c);
+	}
 }
 
 void
