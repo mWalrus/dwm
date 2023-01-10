@@ -65,8 +65,12 @@ All `.diff` files can be found in the [patches/ directory](./patches).
 |Mod+q|Exit dwm|Double press to perform action|
 |Mod+Shift+Up|Increase volume||
 |Mod+Shift+Down|Decrease volume||
-|Mod+Shift+m|Mute volume||
+|Mod+Shift+Ctrl+m|Mute volume||
 |Mod+h|Focus monitor left||
 |Mod+l|Focus monitor right||
 |Mod+Shift+h|Decrease master client width||
 |Mod+Shift+l|Increase master client width||
+|Mod+Shift+t|Default tiling layout||
+|Mod+Shift+f|Floating layout||
+|Mod+Shift+m|Monocle layout||
+|Mod+Shift+c|Column stack layout||
