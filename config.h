@@ -143,8 +143,6 @@ static const char *const autostart[] = {
 	"feh", "--bg-center", "/usr/share/dwm/wallpaper.png", NULL,
 	"killall", "dunst", NULL,
 	"type", "dunst", "&&", "dunst", NULL, /* only launch dunst if the binary exists */
-	"setxkbmap", "-layout", "us", NULL,
-	"setxkbmap", "-option", "compose:ralt", NULL,
 	"slstatus", NULL,
 	NULL
 };
