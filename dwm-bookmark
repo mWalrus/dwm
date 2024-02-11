@@ -1,0 +1,16 @@
+#!/bin/sh
+SNIPPETS_FILE="$HOME/.config/snippets"
+
+# check whether the file exists or not and create it if it doesn't
+if [ ! -f "$SNIPPETS_FILE" ]; then
+  touch "$SNIPPETS_FILE"
+fi
+
+SELECTION="$(xclip -o)"
+
+if grep -q "^$SELECTION$" "$SNIPPETS_FILE"; then
+  notify-send "Error." "Snippet exists! Skipping."
+else
+  echo "$SELECTION" >> "$SNIPPETS_FILE"
+  notify-send "Success!" "Saved $SELECTION to snippets"
+fi

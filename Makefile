@@ -47,7 +47,12 @@ install: all
 	sed "s/VERSION/${VERSION}/g" < dwm.1 > ${DESTDIR}${MANPREFIX}/man1/dwm.1
 	chmod 644 ${DESTDIR}${MANPREFIX}/man1/dwm.1
 	mkdir -p /usr/share/dwm
+	# wallpaper
 	cp -f wallpaper.png /usr/share/dwm/
+	# bookmarking script
+	cp -f dwm-bookmark /bin/dwm-bookmark
+	chmod 755 /bin/dwm-bookmark
+	# dunst config
 ifneq (, $(shell command -v dunst))
 	mkdir -p /etc/dunst
 	cp -f dunstrc /etc/dunst/
@@ -58,5 +63,9 @@ uninstall:
 		${DESTDIR}${MANPREFIX}/man1/dwm.1
 	rm -f /usr/share/xsessions/dwm.desktop
 	rm -rf /usr/share/dwm
+	rm -f /bin/dwm-bookmark
+ifneq (, $(shell command -v dunst))
+	rm -rf /etc/dunst
+endif
 
 .PHONY: all options clean dist install uninstall
