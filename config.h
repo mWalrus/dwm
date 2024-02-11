@@ -70,7 +70,6 @@ static const char *flameshotcmd[]		= { "flameshot", "gui", NULL};
 static const char *upvol[]   				= { "amixer", "set", "Master", "2%+",     NULL };
 static const char *downvol[] 				= { "amixer", "set", "Master", "2%-",     NULL };
 static const char *mutevol[] 				= { "amixer", "set", "Master", "toggle", NULL };
-
 #include "exitdwm.c"
 
 static const Key keys[] = {
@@ -91,7 +90,8 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_h,      setmfact,       {.f = -0.05} },
 	{ MODKEY|ShiftMask,             XK_l,      setmfact,       {.f = +0.05} },
 	{ MODKEY|ShiftMask, 						XK_b, 		 spawn,       	 SHCMD("xdotool type $(grep -v '^#' ~/.config/snippets | dmenu -i -l 50 | cut -d' ' -f1)") },
-	{ MODKEY|ShiftMask|ControlMask, XK_b,      spawn,       	 {.v = (const char*[]){ "/bin/dwm-bookmark"}} },
+	{ MODKEY|ShiftMask|ControlMask, XK_b,      spawn,       	 {.v = (const char*[]){ "/bin/dwm-bookmark", NULL } } },
+	{ MODKEY|ShiftMask,							XK_x,      spawn,       	 SHCMD("awk -i inplace -v rmv=\"$(grep -v '^#' ~/.config/snippets | dmenu -i -l 50 | cut -d' ' -f1)\" '!index($0,rmv)' ~/.config/snippets") },
 	{ MODKEY,                       XK_Return, zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY|ShiftMask,							XK_q,      killclient,     {0} },
