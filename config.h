@@ -81,7 +81,7 @@ static const Key keys[] = {
 	{ MODKEY, 											XK_b,      spawn,      		 {.v = browsercmd } },
 	{ MODKEY, 											XK_d,      spawn,      		 {.v = discordcmd } },
 	{ MODKEY, 											XK_c,      spawn,      		 {.v = chatterinocmd } },
-	{ MODKEY|ShiftMask, 						XK_b,      togglebar,      {0} },
+	{ MODKEY|ShiftMask|ControlMask, XK_h,      togglebar,      {0} },
 	{ MODKEY|ShiftMask,             XK_j,      rotatestack,    {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_k,      rotatestack,    {.i = -1 } },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
