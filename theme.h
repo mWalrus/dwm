@@ -8,7 +8,7 @@ static const char col_mauve[]       = "#ca9ee6";
 
 /*bar padding*/
 static const int horizpadbar        = 4;        /* horizontal padding for statusbar */
-static const int vertpadbar         = 0;        /* vertical padding for statusbar */
+static const int vertpadbar         = 4;        /* vertical padding for statusbar */
 
 /*fonts*/
 static const char *fonts[]          = { "monospace:size=12" };
