@@ -61,7 +61,7 @@ All `.diff` files can be found in the [patches/ directory](./patches).
 |Mod+b|Launch firefox|Requires firefox|
 |Mod+d|Launch discord|Requires discord|
 |Mod+c|Launch chatterino|Requires chatterino|
-|Mod+Shift+b|Toggle bar||
+|Mod+Shift+Ctrl+h|Toggle bar||
 |Mod+Shift+q|Kill focused client||
 |Mod+Shift+p|Launch exit menu||
 |Mod+q|Exit dwm|Double press to perform action|
@@ -75,4 +75,6 @@ All `.diff` files can be found in the [patches/ directory](./patches).
 |Mod+Shift+t|Default tiling layout||
 |Mod+Shift+f|Floating layout||
 |Mod+Shift+m|Monocle layout||
-|Mod+Shift+c|Column stack layout||
+|Mod+Shift+b|Open bookmarks||
+|Mod+Shift+Ctrl+b|Save bookmark|Takes currently selected text|
+|Mod+Shift+x|Delete bookmark||
