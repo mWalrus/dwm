@@ -12,4 +12,4 @@ static const int vertpadbar         = 4;        /* vertical padding for statusba
 
 /*fonts*/
 static const char *fonts[]          = { "monospace:size=12" };
-static const char dmenufont[]       = "monospace:size=11";
+static const char dmenufont[]       = "monospace:size=12";
