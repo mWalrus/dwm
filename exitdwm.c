@@ -9,15 +9,7 @@ void exitdwm ()
 	defined S_OFFSCREEN			|| \
 	defined S_EXIT				|| \
 	defined S_REBOOT			|| \
-	defined S_SHUTDOWN			|| \
-	defined S_LOCK_ICON			|| \
-	defined S_RESTART_DWM_ICON	|| \
-	defined S_OFFSCREEN_ICON	|| \
-	defined S_EXIT_ICON			|| \
-	defined S_REBOOT_ICON		|| \
-	defined S_SHUTDOWN_ICON		|| \
-	defined S_FORMAT			|| \
-	defined S_FORMAT_CLEAR
+	defined S_SHUTDOWN
 # error (conflicting macro names)
 # endif
 
@@ -27,32 +19,22 @@ void exitdwm ()
 # define S_EXIT "exit"
 # define S_REBOOT "reboot"
 # define S_SHUTDOWN "shutdown"
-# define S_LOCK_ICON "\uf023"			// <= FontAwesome icons
-# define S_RESTART_DWM_ICON "\uf01e"
-# define S_OFFSCREEN_ICON "\uf108"
-# define S_EXIT_ICON "\uf2f5"
-# define S_REBOOT_ICON "\uf021"
-# define S_SHUTDOWN_ICON "\uf011"
-
-# define S_FORMAT(ACTION) S_##ACTION##_ICON " " S_##ACTION
-# define S_FORMAT_CLEAR "sed 's/^..//'"
 
 	int cmd_buf = 256;
 
 	char command[cmd_buf];
 
-	snprintf(command, cmd_buf, "echo  \"%s\n%s\n%s\n%s\n%s\n%s\" | dmenu -fn '%s' -sb '%s' -sf '%s' -nb '%s' -p exit: | %s",
-		S_FORMAT (SHUTDOWN),
-		S_FORMAT (REBOOT),
-		S_FORMAT (LOCK),
-		S_FORMAT (RESTART_DWM),
-		S_FORMAT (OFFSCREEN),
-		S_FORMAT (EXIT),
+	snprintf(command, cmd_buf, "echo  \"%s\n%s\n%s\n%s\n%s\n%s\" | dmenu -fn '%s' -sb '%s' -sf '%s' -nb '%s' -p exit: ",
+		S_SHUTDOWN,
+		S_REBOOT,
+		S_LOCK,
+		S_RESTART_DWM,
+		S_OFFSCREEN,
+		S_EXIT,
 		dmenufont,
 		col_mauve,
 		col_black,
-		col_gray1,
-		S_FORMAT_CLEAR
+		col_gray1
 	);
 
 	FILE * exit_menu = popen(command, "r");
@@ -83,12 +65,4 @@ close_streams:
 # undef S_EXIT
 # undef S_REBOOT
 # undef S_SHUTDOWN
-# undef S_LOCK_ICON
-# undef S_RESTART_DWM_ICON
-# undef S_OFFSCREEN_ICON
-# undef S_EXIT_ICON
-# undef S_REBOOT_ICON
-# undef S_SHUTDOWN_ICON
-# undef S_FORMAT
-# undef S_FORMAT_CLEAR
 }
