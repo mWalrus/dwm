@@ -38,11 +38,9 @@ dist: clean
 
 install: all
 	mkdir -p /usr/share/xsessions
-	cp -f dwm.desktop /usr/share/xsessions/
-	chmod 644 /usr/share/xsessions/dwm.desktop
+	install -Dm644 ./dwm.desktop /usr/share/xsessions
 	mkdir -p ${DESTDIR}${PREFIX}/bin
-	cp -f dwm ${DESTDIR}${PREFIX}/bin
-	chmod 755 ${DESTDIR}${PREFIX}/bin/dwm
+	install -Dm755 ./dwm ${DESTDIR}${PREFIX}/bin
 	mkdir -p ${DESTDIR}${MANPREFIX}/man1
 	sed "s/VERSION/${VERSION}/g" < dwm.1 > ${DESTDIR}${MANPREFIX}/man1/dwm.1
 	chmod 644 ${DESTDIR}${MANPREFIX}/man1/dwm.1
@@ -50,8 +48,7 @@ install: all
 	# wallpaper
 	cp -f wallpaper.png /usr/share/dwm/
 	# bookmarking script
-	cp -f dwm-bookmark /bin/dwm-bookmark
-	chmod 755 /bin/dwm-bookmark
+	install -Dm 755 ./dwm-bookmark /bin/dwm-bookmark
 	# dunst config
 ifneq (, $(shell command -v dunst))
 	mkdir -p /etc/dunst
